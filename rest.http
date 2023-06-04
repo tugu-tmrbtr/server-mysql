@@ -1,0 +1,36 @@
+GET http://localhost:8080/api/user
+###
+GET http://localhost:8080/api/user/1
+###
+POST http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+	"firstname": "Ada",
+	"lastname": "Wong",
+	"email": "ada.wong@gmail.com",
+	"mobile": "99999999",
+	"password": "pass1234"
+}
+###
+PUT http://localhost:8080/api/user/1
+Content-Type: application/json
+
+{
+	"firstname": "Ashley",
+	"lastname": "Graham",
+	"email": "ashley.graham@gmail.com",
+	"mobile": "88888888"
+}
+###
+PUT http://localhost:8080/api/user/role/1
+Content-Type: application/json
+
+{
+	"role": "admin"
+}
+###
+DELETE http://localhost:8080/api/user/
+
+###
+DELETE http://localhost:8080/api/user/3
